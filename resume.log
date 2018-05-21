@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.5.23)  19 APR 2018 18:34
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.5.23)  21 MAY 2018 11:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -322,26 +322,26 @@ File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 108.
+(Font)              <10.95> on input line 123.
 
 [1
 
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 272.
- [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 272.
+] [2]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 290.
+ [3]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 290.
  (./resume.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 272.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 272.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 272.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 290.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 290.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 290.
  ) 
 Here is how much of TeX's memory you used:
- 9303 strings out of 493005
- 131603 string characters out of 6134596
- 210111 words of memory out of 5000000
- 13219 multiletter control sequences out of 15000+600000
- 8148 words of font info for 40 fonts, out of 8000000 for 9000
+ 9305 strings out of 493005
+ 131655 string characters out of 6134596
+ 211111 words of memory out of 5000000
+ 13220 multiletter control sequences out of 15000+600000
+ 8156 words of font info for 41 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 28i,11n,48p,241b,687s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,11n,48p,241b,603s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on resume.pdf (2 pages).
+Output written on resume.pdf (3 pages).
