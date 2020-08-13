@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.3)  12 AUG 2020 15:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.3)  12 AUG 2020 19:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**/home/gfoster23/scratch/resume/resume.tex
-(/home/gfoster23/scratch/resume/resume.tex
+**resume.tex
+(./resume.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -352,13 +352,13 @@ Package rerunfilecheck Info: File `resume.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 347.
  ) 
 Here is how much of TeX's memory you used:
- 6368 strings out of 483183
- 96635 string characters out of 5966293
+ 6367 strings out of 483183
+ 96544 string characters out of 5966293
  362276 words of memory out of 5000000
  21272 multiletter control sequences out of 15000+600000
  539309 words of font info for 49 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 34i,11n,45p,246b,673s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,11n,45p,215b,673s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/gfoster23/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095
 .600pk> </home/gfoster23/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcr
 m1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
@@ -368,7 +368,7 @@ m1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on resume.pdf (3 pages, 113519 bytes).
+Output written on resume.pdf (3 pages, 113514 bytes).
 PDF statistics:
  80 PDF objects out of 1000 (max. 8388607)
  65 compressed objects within 1 object stream
