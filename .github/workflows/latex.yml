@@ -12,3 +12,8 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: resume.tex
+      - name: Copy PDF to action
+        uses: actions/upload-artifact@v2
+        with:
+          name: PDF
+          path: resume.pdf
