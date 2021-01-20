@@ -1,5 +1,4 @@
-https://github.com/actions/hello-world/workflows/Build%20LaTeX%20document/badge.svg
-
+https://img.shields.io/github/workflow/status/brona90/resume/Build%20LaTeX%20document?style=for-the-badge
 
 # resume
 Latex based resume
