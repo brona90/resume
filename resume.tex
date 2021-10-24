@@ -1,4 +1,3 @@
-
 % -------------------------
 % Resume in Latex
 % ------------------------
@@ -30,6 +29,9 @@
 \addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.0in}
+\setlength{\footskip}{4.35004pt} 
+
+
 
 \urlstyle{same}
 
@@ -74,7 +76,7 @@
 
 % ----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{http://gdfoster.wordpress.com}{\Large Gregory Dean Foster, Jr.}} & Email : \href{mailto:brona90@gmail.com}{brona90@gmail.com}\\
+  \textbf{\Large Gregory Dean Foster, Jr.} & Email : \href{mailto:gfoster@nexient.com}{gfoster@nexient.com}\\
                                                                                  & Mobile : +1(504)355-7726 \\
 \end{tabular*}
 
@@ -83,9 +85,68 @@
 \section{Experience} 
 \resumeSubHeadingListStart
 
+
+\resumeSubheading
+{Nexient}{New Orleans, LA}
+{Delivery Director for DevOps}{August 2021 - Present}
+\resumeItemListStart
+  \resumeItem{Wesco}
+  {Provided Evolutionary Database Design reference for DevOps suggestion with the following goals
+
+    \begin{itemize}
+      \item dark deployments
+      \item feature toggles
+      \item canary releases
+      \item immutable infrastructure
+    \end{itemize}
+
+  }
+
+      
+  \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+\resumeSubHeadingListStart
+\resumeSubheading
+{Contino}{New Orleans, LA}
+{Lead DevOps Consultant}{Oct 2020 - August 2021}
+\resumeItemListStart
+  \resumeItem{Discover}
+  {Designed and taught dojos, being accelerated classes to teach specific engineering practices with hands on examples of the following topics
+
+    \begin{itemize}
+      \item TDD
+      \item BDD
+      \item Contract testing
+      \item Personas
+      \item Vertical slicing
+      \item VSMs
+      \item CI/CD 
+    \end{itemize}
+
+  }
+
+  \resumeItem{The Hartford}
+  {Client needed Snowflake to be accessible to their data scientists and to access their VPC data privately in AWS
+
+    \begin{itemize}
+      \item designed cloud access solution
+      \item implemented Cloudformation template
+      \item provided live demonstration for key milestones
+      \item trained team in best practices
+    \end{itemize}
+
+  }
+      
+  \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+  \resumeSubHeadingListStart
   \resumeSubheading
   {DXC}{New Orleans, LA}
-  {Senior DevOps Engineer}{Oct 2018 -  Present}
+  {Senior DevOps Engineer}{Oct 2018 - June 2020}
   \resumeItemListStart
     \resumeItem{Platform DXC}
     {A data center and cloud Kubernetes solution for enterprise cloud development, monitoring, automation, and workflows 
@@ -99,8 +160,8 @@
         \item provided centralized version controlled configuration
         \item implemented continuous integration via Jenkins pipelines
         \item wrote custom resource definitions in python
-        \item provided API wrapper for any other client deployed in Kubrenetes stack
-        \item provided serverless access to exposed API layer via kubeless
+        \item provided API wrapper for any other client deployed in Kubernetes stack
+        \item provided serverless access to exposed API layer via Kubeless
       \end{itemize}
 
     }
@@ -120,14 +181,14 @@
     }
 
     \resumeItem{Train Junior Developers}
-               {Provided ongoing training to other teams
+               {Provided ongoing training to other teams of the following
 
       \begin{itemize}
-        \item Git
-        \item Python
-        \item Kubrenetes
+        \item git
+        \item python
+        \item Kubernetes
         \item Docker
-        \item API via swagger
+        \item API design via swagger
         \item Design Patterns
         \item Best Practices
         \item IDE customization and configuration
@@ -144,7 +205,7 @@
   {Staff Build and Release Engineer}{Dec 2016 - Oct 2018}
   \resumeItemListStart
     \resumeItem{Platform Operations Advisor}
-    {A cloud based (PREDIX) industiral IoT solution for Oil Platforms
+    {A cloud based (PREDIX) industrial IoT solution for Oil Platforms
 
       \begin{itemize}
         \item standardized build processes
@@ -152,8 +213,8 @@
         \item standardized access to source code
         \item provided centralized version controlled configuration
         \item implemented continuous integration via Jenkins pipeline
-        \item dockerized full stack
-        \item enforced gitflow change management
+        \item containerized full stack
+        \item enforced git-flow change management
         \item designed and implemented CA Rally based deployment strategy
         \item consolidated legacy UAA configuration
         \item automated PREDIX environment for deployment
@@ -173,7 +234,7 @@
         \item built continuous integration server
         \item automated job creation via Jenkins jobs DSL
         \item coordinated all build and release engineers for the project
-        \item dockerized development environment
+        \item containerized development environment
         \item created and maintained source code repositories
       \end{itemize}
 
@@ -184,7 +245,7 @@
 
       \begin{itemize}
         \item leveraged existing continuous integration server
-        \item cleaned up exisiting Bamboo based jobs
+        \item cleaned up existing Bamboo based jobs
         \item coordinated all build and release engineers for the project
         \item rewrote build scripts to use best practices
         \item maintained source code repositories
@@ -200,12 +261,12 @@
   {Senior Software Engineer}{June 2016 - Dec 2016}
   \resumeItemListStart
     \resumeItem{Intelligent Pipeline Management}
-    {Legacy datacenter based GIS industrial intranet solution for managing risk for pipeline networks visualizing customer provided inspections information and real time sensor data
+    {Legacy data-center based GIS industrial intranet solution for managing risk for pipeline networks visualizing customer provided inspections information and real time sensor data
 
       \begin{itemize}
         \item introduced jHipster to team
         \item train junior Software Engineer on SOLID practices
-        \item wrote selinium driven test suite leveraging jBehave
+        \item wrote Selenium driven test suite leveraging jBehave
         \item refactored legacy code base
       \end{itemize}
 
@@ -219,7 +280,7 @@
   {Senior DevOps Engineer}{Mar 2015 - June 2016}
   \resumeItemListStart
     \resumeItem{Engage Drilling}
-    {Customer collaboration portal to support offshore drilling industry with documentation, service, ecommerce, and Contractual Service Agreements.
+    {Customer collaboration portal to support offshore drilling industry with documentation, service, e-commerce, and Contractual Service Agreements.
 
       \begin{itemize}
         \item implemented Continuous Integration via shared Jenkins service
@@ -313,7 +374,7 @@
 
       \begin{itemize}
         \item implemented Java based migration software to move millions of files with folder based META into sharepoint
-        \item ran said Java software for sucessful migration
+        \item ran said Java software for successful migration
       \end{itemize}
 
     }
@@ -336,7 +397,7 @@
   \resumeSubHeadingListStart
   \resumeSubheading
   {Michigan Technological University}{Houghton, MI}
-  {Bachelors of Applied Physics and Mathematics;  GPA: 3.9}{Aug. 2000 -- May 2005}
+  {Bachelors of Applied Physics and Mathematics}{Aug. 2000 -- May 2005}
   \resumeSubHeadingListEnd
 
   % ------------References----------------
