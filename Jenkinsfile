@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout'){
             steps {
                 // checkout scm
-                ls -la
+                sh 'ls -la'
             }
         }
         
