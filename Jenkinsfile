@@ -2,16 +2,18 @@ pipeline {
     agent any
     stages {
         
-        stage('Checkout'){
+
+        
+        stage('Build') {
             steps {
-                // checkout scm
-                sh 'ls -la'
+                echo 'Here we might tell the Jenkins user some info'
             }
         }
-        
-        stage('Hello') {
+
+
+        stage('Java?') {
             steps {
-                echo 'Hello World'
+                sh 'java -version'
             }
         }
     }
