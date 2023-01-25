@@ -1,0 +1,8 @@
+.auctex-auto/
+.vscode/
+
+*.aux
+*.dvi
+*.log
+*.out
+*.gz

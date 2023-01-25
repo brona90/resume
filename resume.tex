@@ -2,7 +2,7 @@
 % Resume in Latex
 % ------------------------
 
-\documentclass[letterpaper,12pt]{article}
+\documentclass[letterpaper, 10pt]{extarticle}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -11,11 +11,11 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-% \usepackage[pdftex]{hyperref}
 \usepackage{hyperref}
 \usepackage{fancyhdr}
 \usepackage[document]{ragged2e}
 
+\listfiles
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -76,370 +76,428 @@
 
 % ----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\Large Gregory Dean Foster, Jr.} & Email : \href{mailto:gregory.foster@cognizant.com}{gregory.foster@cognizant.com}\\
+  \textbf{\Large Gregory Dean Foster, Jr.} & Email : \href{mailto:brona90@gmail.com}{brona90@gmail.com}\\
                                                                                  & Mobile : +1(504)355-7726 \\
 \end{tabular*}
 
 
 % -----------EXPERIENCE-----------------
-\section{Experience} 
+\section{Experience}
+
+
 \resumeSubHeadingListStart
 
 \resumeSubheading
 {Cognizant}{Asheville, NC}
-{Director and Technical Principal}{August 2022 - Present}
+{Director - Technical Principal}{July 2022 - Present}
 \resumeItemListStart
-  
+
+\resumeItem{Security Community lead}
+{Started Security Community of Practice for Tech Mod consulting organization  
+
+  \begin{itemize}
+    \item provided shift left training material
+    \item created teams channel 
+    \item created wiki in teams channel
+    \item created standard interview questions for potential candidates 
+    \item defined what security means to consultants in tech mod organization
+    \item provided roadmap for development
+    \item created team calendar
+    \item facilitated meetings
+  \end{itemize}
+
+}
+
 \resumeItem{Cloudboost}
-  {Co-managed team that implemented sevices to provision cloud accounts with gaurdrails in the 3 major CSPs
+  {Co-managed team that implemented services to provision cloud accounts with guardrails in the 3 major CSPs
 
     \begin{itemize}
-      \item written in golang
-      \item following the 3musketeers pattern for development experince
+      \item wrote in golang
+      \item followed the 3musketeers pattern for development experience
       \item deployed to AWS EKS via Helm charts
-      \item IaC for application all in Terraform
-      \item IaC for gaurdrails all in Terraform 
-      \item github actions for CI/CD
+      \item implemented IaC for application all in Terraform
+      \item implemented IaC for guardrails all in Terraform 
+      \item implemented CI/CD with github actions
     \end{itemize}
 
   }
-      
+
 \resumeItemListEnd
 \resumeSubHeadingListEnd
 
 \resumeSubHeadingListStart
+
 \resumeSubheading
-{Nexient}{New Orleans, LA}
-{Delivery Director for DevOps}{August 2021 - June 2022}
+{Nexient}{Asheville, NC}
+{Delivery Director for DevOps}{August 2021 - May 2022}
 \resumeItemListStart
-  \resumeItem{GIA}
-  {Provided Software Architechture and DevSecOps runway for lab's diamond grading process leveraging the following 
-  
-    \begin{itemize}
-      \item volatility based decomposition architechture
-      \item github actions
-      \item AWS ECS reference architechture
-      \item IaC via Terraform modules called by Terragrunt
-      \item testing framework for Terraform
-      \item CI-CD for AWS ECS with AppConfig Feature Flags
-      \item Evolutionary Database Design pattern leveraging Feature Flags
-      \item Auto SemVer from commit message patterns 
-    \end{itemize}
-  
-  }
 
-  \resumeItem{Wesco}
-  {Provided Evolutionary Database Design reference for DevOps suggestion with the following goals
+\resumeItem{GIA}
+{Provided reference Volatility Based Decomposition architecture for lab operations platform, Beacon
 
-    \begin{itemize}
-      \item dark deployments
-      \item feature toggles
-      \item canary releases
-      \item immutable infrastructure
-    \end{itemize}
+  \begin{itemize}
+    \item provided and trained development team with reference architecture
+    \item provided devsecops runway for development in github actions workflows to AWS
+    \item provided multi-region HA suggestions for architecture
+    \item managed roles and responsibilities for project
+    \item provided roadmap for devsecops runway
+    \item provided templated Terraform modules for cloud resources
+    \item provided pipeline for Terraform module development to AWS
+    \item provided roadmap for development of Beacon
+    \item managed Jira for team
+    \item provided onboarding instructions for new developers
+  \end{itemize}
 
-  }
-      
+}
+
+\resumeItem{Fidelity}
+{Trained team of Juniors on azure, k8s, helm, and Jenkinsfiles for app migration
+
+  \begin{itemize}
+    \item provided process flow diagrams for every step
+    \item delivered process flow diagrams to client
+    \item migrated on premise applications installed on rancher k8s to aks
+    \item updated helm chart for new installations
+    \item created and/or updated Jenkinsfiles for new installations
+    \item connected all services to centralized datadog instance
+  \end{itemize}
+
+}
+
+\resumeItem{Wesco}
+{Provided Evolutionary Database Design reference for DevOps suggestion with the following goals
+
+  \begin{itemize}
+    \item dark deployments
+    \item feature toggles
+    \item canary releases
+    \item immutable infrastructure
+  \end{itemize}
+
+}
+
+\resumeItem{Bench}
+{Trained and supported those on bench for devsecops
+
+  \begin{itemize}
+    \item migrated internal applications from classic VM to containerized ACS solution
+    \item trained team on Azure DevOps
+    \item trained team on Jenkins
+    \item trained team on Azure pipelines
+    \item trained team on Docker and containerization
+  \end{itemize}
+
+}
+
 \resumeItemListEnd
 \resumeSubHeadingListEnd
-
 
 \resumeSubHeadingListStart
 \resumeSubheading
 {Contino}{New Orleans, LA}
 {Lead DevOps Consultant}{Oct 2020 - August 2021}
 \resumeItemListStart
-  \resumeItem{Discover}
-  {Designed and taught dojos, being accelerated classes to teach specific engineering practices with hands on examples of the following topics
+\resumeItem{Discover}
+{Designed and taught dojos, being accelerated classes to teach specific engineering practices with hands on examples of the following topics
 
-    \begin{itemize}
-      \item TDD
-      \item BDD
-      \item Contract testing
-      \item Personas
-      \item Vertical slicing
-      \item VSMs
-      \item CI/CD 
-    \end{itemize}
+  \begin{itemize}
+    \item TDD
+    \item BDD
+    \item Contract testing
+    \item Personas
+    \item Vertical slicing
+    \item VSMs
+    \item CI/CD
+  \end{itemize}
 
-  }
+}
 
-  \resumeItem{The Hartford}
-  {Client needed Snowflake to be accessible to their data scientists and to access their VPC data privately in AWS
+\resumeItem{The Hartford}
+{Client needed Snowflake to be accessible to their data scientists and to access their VPC data privately in AWS
 
-    \begin{itemize}
-      \item designed cloud access solution
-      \item implemented Cloudformation template
-      \item provided live demonstration for key milestones
-      \item trained team in best practices
-    \end{itemize}
+  \begin{itemize}
+    \item designed cloud access solution
+    \item implemented Cloudformation template
+    \item provided live demonstration for key milestones
+    \item trained team in best practices
+  \end{itemize}
 
-  }
-      
-  \resumeItemListEnd
-  \resumeSubHeadingListEnd
+}
 
-
-  \resumeSubHeadingListStart
-  \resumeSubheading
-  {DXC}{New Orleans, LA}
-  {Senior DevOps Engineer}{Oct 2018 - June 2020}
-  \resumeItemListStart
-    \resumeItem{Platform DXC}
-    {A data center and cloud Kubernetes solution for enterprise cloud development, monitoring, automation, and workflows 
-
-      \begin{itemize}
-        \item standardized build processes
-        \item consolidated source code repositories
-        \item standardized access to source code
-        \item leveraged secrets management via HashiCorp Vault
-        \item developed helm charts for deployment of tools
-        \item provided centralized version controlled configuration
-        \item implemented continuous integration via Jenkins pipelines
-        \item wrote custom resource definitions in python
-        \item provided API wrapper for any other client deployed in Kubernetes stack
-        \item provided serverless access to exposed API layer via Kubeless
-      \end{itemize}
-
-    }
-
-    \resumeItem{Domain Task Orchestrator}
-    {Cloud based Kubernetes tool to facilitate other tools to communicate with one another
-
-      \begin{itemize}
-        \item designed solution
-        \item isolated workflows to directed acyclic graphs
-        \item provided live demonstration for key milestones
-        \item trained team in best practices
-        \item replaced incomplete legacy solutions
-        \item integrated into platform offering
-      \end{itemize}
-
-    }
-
-    \resumeItem{Train Junior Developers}
-               {Provided ongoing training to other teams of the following
-
-      \begin{itemize}
-        \item git
-        \item python
-        \item Kubernetes
-        \item Docker
-        \item API design via swagger
-        \item Design Patterns
-        \item Best Practices
-        \item IDE customization and configuration
-      \end{itemize}
-
-}      
-
-    \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
-\resumeSubHeadingListStart
-  \resumeSubheading
-  {Baker Hughes}{New Orleans, LA}
-  {Staff Build and Release Engineer}{Dec 2016 - Oct 2018}
-  \resumeItemListStart
-    \resumeItem{Platform Operations Advisor}
-    {A cloud based (PREDIX) industrial IoT solution for Oil Platforms
-
-      \begin{itemize}
-        \item standardized build processes
-        \item consolidated source code repositories
-        \item standardized access to source code
-        \item provided centralized version controlled configuration
-        \item implemented continuous integration via Jenkins pipeline
-        \item containerized full stack
-        \item enforced git-flow change management
-        \item designed and implemented CA Rally based deployment strategy
-        \item consolidated legacy UAA configuration
-        \item automated PREDIX environment for deployment
-        \item designed visual representation to communicate processes
-        \item coordinated all build and release engineers for the project
-        \item setup portable and standardized development environment
-        \item enforced semantic versioning for all released artifacts
-        \item designed and implemented release process  
-      \end{itemize}
-
-    }
-
-    \resumeItem{Digital Pipeline}
-    {A Cloud based (PREDIX) GIS industrial IoT solution for managing risk on pipeline networks via visualizing customer provided inspections information and real time sensor data
-
-      \begin{itemize}
-        \item built continuous integration server
-        \item automated job creation via Jenkins jobs DSL
-        \item coordinated all build and release engineers for the project
-        \item containerized development environment
-        \item created and maintained source code repositories
-      \end{itemize}
-
-    }
-
-    \resumeItem{Reliance}
-    {Cloud based (PREDIX) real time monitoring of de-salter equipment used to alert operators of potential upsets based on sensor data and historical trends
-
-      \begin{itemize}
-        \item leveraged existing continuous integration server
-        \item cleaned up existing Bamboo based jobs
-        \item coordinated all build and release engineers for the project
-        \item rewrote build scripts to use best practices
-        \item maintained source code repositories
-      \end{itemize}
-
-    }
-  \resumeItemListEnd
-\resumeSubHeadingListEnd
-
-\resumeSubHeadingListStart
-  \resumeSubheading
-  {GE Digital}{New Orleans, LA}
-  {Senior Software Engineer}{June 2016 - Dec 2016}
-  \resumeItemListStart
-    \resumeItem{Intelligent Pipeline Management}
-    {Legacy data-center based GIS industrial intranet solution for managing risk for pipeline networks visualizing customer provided inspections information and real time sensor data
-
-      \begin{itemize}
-        \item introduced jHipster to team
-        \item train junior Software Engineer on SOLID practices
-        \item wrote Selenium driven test suite leveraging jBehave
-        \item refactored legacy code base
-      \end{itemize}
-
-    }
-  \resumeItemListEnd
-\resumeSubHeadingListEnd
-
-\resumeSubHeadingListStart
-  \resumeSubheading
-  {GE Oil and Gas}{New Orleans, LA}
-  {Senior DevOps Engineer}{Mar 2015 - June 2016}
-  \resumeItemListStart
-    \resumeItem{Engage Drilling}
-    {Customer collaboration portal to support offshore drilling industry with documentation, service, e-commerce, and Contractual Service Agreements.
-
-      \begin{itemize}
-        \item implemented Continuous Integration via shared Jenkins service
-        \item composed Chef recipes for AWS infrastructure
-        \item wrote kitchen based test suite for infrastructure  
-        \item wrote bash scripts for manual deployments to said infrastructure
-        \item migrated deployments from delivery based system to bash deployments  
-        \item trained team on use of above
-        \item collaborated with corporate team for use of shared chef server
-      \end{itemize}
-
-    }
-  \resumeItemListEnd
-\resumeSubHeadingListEnd
-
-\resumeSubHeadingListStart
-  \resumeSubheading
-  {GE Capital}{New Orleans, LA}
-  {Senior Java Developer}{Oct 2012 - Mar 2015}
-  \resumeItemListStart
-    \resumeItem{Commercial Distribution Financing}
-    {Legacy GWT risk analysis calculator for commercial loans.
-
-      \begin{itemize}
-        \item added features from client to legacy code base
-        \item removed bugs from legacy code base
-      \end{itemize}
-
-    }
-
-    \resumeItem{SecureOS}
-    {Recipes for secure operating systems to provision servers.
-
-      \begin{itemize}  
-        \item architected full chef based solution for SecureOS footprint based on STIG ISOs
-        \item implemented solution in chef
-        \item trained team on solution
-      \end{itemize}
-
-    }
-    
-    \resumeItem{ESB layer for banks}
-    {Service Catalog and shared SOA middleware for online banking solution
-
-      \begin{itemize}
-        \item architected full stack solution to replace legacy code
-        \item implemented in JAVA using Spring guided by WSDL
-        \item leveraged contract first best practices
-        \item documented suggested deployment process
-      \end{itemize}
-
-    }  
-  \resumeItemListEnd
-\resumeSubHeadingListEnd
-
-\resumeSubHeadingListStart
-  \resumeSubheading
-  {Applied Enterprise Solutions}{Slidell, LA}
-  {Java Developer}{Feb 2012 - Oct 2012}
-  \resumeItemListStart
-    \resumeItem{Inventory program}
-    {Software based Naval equipment program
-      
-      \begin{itemize}
-        \item trained in best practices for java solutions
-        \item implemented WSDL based backend methods
-        \item extended functionality of existing code base
-      \end{itemize}
-
-    }
-  \resumeItemListEnd
-\resumeSubHeadingListEnd
-
-\resumeSubHeadingListStart
-  \resumeSubheading
-  {U.S. Department of Energy}{New Orleans, LA}    
-  {Java Developer}{Sep 2011 - Apr 2012}
-  \resumeItemListStart
-    \resumeItem{SAP}
-    {Software to track learning of employees
-      
-      \begin{itemize}
-        \item edited workflow to include development environment
-        \item provided process for adding and replacing test content for end users
-      \end{itemize}
-
-    }
-
-    \resumeItem{Sharepoint}
-    {Microsoft made instance to share documentation 
-
-      \begin{itemize}
-        \item implemented Java based migration software to move millions of files with folder based META into sharepoint
-        \item ran said Java software for successful migration
-      \end{itemize}
-
-    }
-  \resumeItemListEnd
+\resumeItemListEnd
 \resumeSubHeadingListEnd
 
 
-  % --------PROGRAMMING SKILLS------------
-  \section{Programming Skills}
-  \resumeSubHeadingListStart
-    \item{
-      \textbf{Languages}{: Ruby, JS, Java, bash, etc.}
-        \hfill
-      \textbf{Technologies}{: AWS, Cloud Foundry, Chef, Jenkins, etc.}
-    }
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+\resumeSubheading
+{DXC}{New Orleans, LA}
+{Senior DevOps Engineer}{Oct 2018 - June 2020}
+\resumeItemListStart
+\resumeItem{Platform DXC}
+{A data center and cloud Kubernetes solution for enterprise cloud development, monitoring, automation, and workflows
 
-  % -----------EDUCATION-----------------
-  \section{Education}
-  \resumeSubHeadingListStart
-  \resumeSubheading
-  {Michigan Technological University}{Houghton, MI}
-  {Bachelors of Applied Physics and Mathematics}{Aug. 2000 -- May 2005}
-  \resumeSubHeadingListEnd
+  \begin{itemize}
+    \item standardized build processes
+    \item consolidated source code repositories
+    \item standardized access to source code
+    \item leveraged secrets management via HashiCorp Vault
+    \item developed helm charts for deployment of tools
+    \item provided centralized version controlled configuration
+    \item implemented continuous integration via Jenkins pipelines
+    \item wrote custom resource definitions in python
+    \item provided API wrapper for any other client deployed in Kubernetes stack
+    \item provided serverless access to exposed API layer via Kubeless
+  \end{itemize}
 
-  % ------------References----------------
-  \section{References}
-  Available upon request.
+}
 
-  % -------------------------------------------
+\resumeItem{Domain Task Orchestrator}
+{Cloud based Kubernetes tool to facilitate other tools to communicate with one another
+
+  \begin{itemize}
+    \item designed solution
+    \item isolated workflows to directed acyclic graphs
+    \item provided live demonstration for key milestones
+    \item trained team in best practices
+    \item replaced incomplete legacy solutions
+    \item integrated into platform offering
+  \end{itemize}
+
+}
+
+\resumeItem{Train Junior Developers}
+{Provided ongoing training to other teams of the following
+
+  \begin{itemize}
+    \item git
+    \item python
+    \item Kubernetes
+    \item Docker
+    \item API design via swagger
+    \item Design Patterns
+    \item Best Practices
+    \item IDE customization and configuration
+  \end{itemize}
+
+}
+
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\resumeSubHeadingListStart
+\resumeSubheading
+{Baker Hughes}{New Orleans, LA}
+{Staff Build and Release Engineer}{Dec 2016 - Oct 2018}
+\resumeItemListStart
+\resumeItem{Platform Operations Advisor}
+{A cloud based (PREDIX) industrial IoT solution for Oil Platforms
+
+  \begin{itemize}
+    \item standardized build processes
+    \item consolidated source code repositories
+    \item standardized access to source code
+    \item provided centralized version controlled configuration
+    \item implemented continuous integration via Jenkins pipeline
+    \item containerized full stack
+    \item enforced git-flow change management
+    \item designed and implemented CA Rally based deployment strategy
+    \item consolidated legacy UAA configuration
+    \item automated PREDIX environment for deployment
+    \item designed visual representation to communicate processes
+    \item coordinated all build and release engineers for the project
+    \item setup portable and standardized development environment
+    \item enforced semantic versioning for all released artifacts
+    \item designed and implemented release process
+  \end{itemize}
+
+}
+
+\resumeItem{Digital Pipeline}
+{A Cloud based (PREDIX) GIS industrial IoT solution for managing risk on pipeline networks via visualizing customer provided inspections information and real time sensor data
+
+  \begin{itemize}
+    \item built continuous integration server
+    \item automated job creation via Jenkins jobs DSL
+    \item coordinated all build and release engineers for the project
+    \item containerized development environment
+    \item created and maintained source code repositories
+  \end{itemize}
+
+}
+
+\resumeItem{Reliance}
+{Cloud based (PREDIX) real time monitoring of de-salter equipment used to alert operators of potential upsets based on sensor data and historical trends
+
+  \begin{itemize}
+    \item leveraged existing continuous integration server
+    \item cleaned up existing Bamboo based jobs
+    \item coordinated all build and release engineers for the project
+    \item rewrote build scripts to use best practices
+    \item maintained source code repositories
+  \end{itemize}
+
+}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\resumeSubHeadingListStart
+\resumeSubheading
+{GE Digital}{New Orleans, LA}
+{Senior Software Engineer}{June 2016 - Dec 2016}
+\resumeItemListStart
+\resumeItem{Intelligent Pipeline Management}
+{Legacy data-center based GIS industrial intranet solution for managing risk for pipeline networks visualizing customer provided inspections information and real time sensor data
+
+  \begin{itemize}
+    \item introduced jHipster to team
+    \item train junior Software Engineer on SOLID practices
+    \item wrote Selenium driven test suite leveraging jBehave
+    \item refactored legacy code base
+  \end{itemize}
+
+}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\resumeSubHeadingListStart
+\resumeSubheading
+{GE Oil and Gas}{New Orleans, LA}
+{Senior DevOps Engineer}{Mar 2015 - June 2016}
+\resumeItemListStart
+\resumeItem{Engage Drilling}
+{Customer collaboration portal to support offshore drilling industry with documentation, service, and Contractual Service Agreements
+
+  \begin{itemize}
+    \item implemented Continuous Integration via shared Jenkins service
+    \item composed Chef recipes for AWS infrastructure
+    \item wrote kitchen based test suite for infrastructure
+    \item wrote bash scripts for manual deployments to said infrastructure
+    \item migrated deployments from delivery based system to bash deployments
+    \item trained team on use of above
+    \item collaborated with corporate team for use of shared chef server
+  \end{itemize}
+
+}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\resumeSubHeadingListStart
+\resumeSubheading
+{GE Capital}{New Orleans, LA}
+{Senior Java Developer}{Oct 2012 - Mar 2015}
+\resumeItemListStart
+\resumeItem{Commercial Distribution Financing}
+{Legacy GWT risk analysis calculator for commercial loans.
+
+  \begin{itemize}
+    \item added features from client to legacy code base
+    \item removed bugs from legacy code base
+  \end{itemize}
+
+}
+
+\resumeItem{SecureOS}
+{Recipes for secure operating systems to provision servers.
+
+  \begin{itemize}
+    \item architected full chef based solution for SecureOS footprint based on STIG ISOs
+    \item implemented solution in chef
+    \item trained team on solution
+  \end{itemize}
+
+}
+
+\resumeItem{ESB layer for banks}
+{Service Catalog and shared SOA middleware for online banking solution
+
+  \begin{itemize}
+    \item architected full stack solution to replace legacy code
+    \item implemented in JAVA using Spring guided by WSDL
+    \item leveraged contract first best practices
+    \item documented suggested deployment process
+  \end{itemize}
+
+}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\resumeSubHeadingListStart
+\resumeSubheading
+{Applied Enterprise Solutions}{Slidell, LA}
+{Java Developer}{Feb 2012 - Oct 2012}
+\resumeItemListStart
+\resumeItem{Inventory program}
+{Software based Naval equipment program
+
+  \begin{itemize}
+    \item trained in best practices for java solutions
+    \item implemented WSDL based backend methods
+    \item extended functionality of existing code base
+  \end{itemize}
+
+}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\resumeSubHeadingListStart
+\resumeSubheading
+{U.S. Department of Energy}{New Orleans, LA}
+{Java Developer}{Sep 2011 - Apr 2012}
+\resumeItemListStart
+\resumeItem{SAP}
+{Software to track learning of employees
+
+  \begin{itemize}
+    \item edited workflow to include development environment
+    \item provided process for adding and replacing test content for end users
+  \end{itemize}
+
+}
+
+\resumeItem{Sharepoint}
+{Microsoft made instance to share documentation
+
+  \begin{itemize}
+    \item implemented Java based migration software to move millions of files with folder based META into sharepoint
+    \item ran said Java software for successful migration
+  \end{itemize}
+
+}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+% --------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+\resumeSubHeadingListStart
+\item{
+            \textbf{Languages}{: Ruby, JS, Java, bash, python, lisp, etc.}
+      }
+\item{
+            \textbf{Technologies}{: AWS, Azure, Cloud Foundry, Chef, Jenkins, Ansible, Terraform etc.}
+      }
+\resumeSubHeadingListEnd
+
+% -----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Michigan Technological University}{Houghton, MI}
+{Bachelors of Applied Physics and Mathematics}{Aug. 2000 -- May 2005}
+\resumeSubHeadingListEnd
+
+% -----------VOLUNTEER-----------------
+\section{Volunteer}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Operation Spark}{New Orleans}
+{Created and taught DevSecOps curriculum}{June 2019 -- Aug. 2021}
+\resumeSubHeadingListEnd
+
+
+% ------------References----------------
+\section{References}
+Available upon request.
+
+% -------------------------------------------
 \end{document}
