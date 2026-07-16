@@ -6,10 +6,14 @@ jobs:
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v4
-      - name: Compile LaTeX document
-        uses: xu-cheng/latex-action@v4
+      # Build through the repo's shell.nix so CI uses the exact same TeX Live
+      # package set as local builds (ebgaramond + fontaxes, enumitem, titlesec).
+      - name: Install Nix
+        uses: cachix/install-nix-action@v30
         with:
-          root_file: resume.tex
+          nix_path: nixpkgs=channel:nixos-unstable
+      - name: Compile LaTeX document
+        run: nix-shell --run 'pdflatex -interaction=nonstopmode -halt-on-error resume.tex'
       - name: Copy PDF to action
         uses: actions/upload-artifact@v4
         with:
